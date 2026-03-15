@@ -1,7 +1,7 @@
 # Copilot Instructions
 
 ## Purpose
-This is a Laravel 12 modular application with **account-based isolation** and strict workspace separation. Copilot must follow all project standards for DTOs, migrations, transformers, and tests.
+This is **Trainify** — a Laravel 12 modular application that integrates Fitness applications with Bookkeeping software using a pull/push syncing method. It has **account-based isolation** and strict workspace separation. Copilot must follow all project standards for DTOs, migrations, transformers, and tests.
 
 ## Mandatory Rules
 

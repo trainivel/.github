@@ -11,8 +11,8 @@ body:
   - type: input
     id: area
     attributes:
-      label: Affected Area or Handler
-      placeholder: e.g. invoices, quotes, dashboard, API
+      label: Affected Area or Connector
+      placeholder: e.g. TrainMore sync, Moneybird push, membership mapping, dashboard, API
     validations:
       required: true
 
