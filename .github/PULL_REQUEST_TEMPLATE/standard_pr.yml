@@ -1,5 +1,5 @@
 name: Standard Pull Request
-description: Use this template for all code contributions to InvoicePlane V2
+description: Use this template for all code contributions to Trainify
 title: "[PR] "
 labels: ["needs review", "status: pending"]
 body:
@@ -7,15 +7,15 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for contributing to InvoicePlane V2!
+        Thank you for contributing to Trainify!
         Please complete all items below to ensure a clean and testable PR.
 
   - type: textarea
     id: summary
     attributes:
       label: Summary
-      description: What does this PR do? Which module or feature does it affect?
-      placeholder: e.g. Adds create/update tests for Quotes
+      description: What does this PR do? Which module, connector, or feature does it affect?
+      placeholder: e.g. Adds sync handler for TrainMore memberships → Moneybird invoices
     validations:
       required: true
 
@@ -24,17 +24,15 @@ body:
     attributes:
       label: Developer Checklist
       options:
-        - label: References a row in `CHECKLIST.md`
-          required: true
         - label: Includes appropriate test coverage
           required: true
         - label: Follows service/DTO/transformer structure (no inline logic)
           required: true
-        - label: UI follows Filament & Livewire best practices
+        - label: Account isolation is respected (no cross-account data leakage)
           required: true
-        - label: Translations added or updated (if needed)
         - label: Ran `php artisan test` and all tests pass
         - label: Ran `vendor/bin/pint` to fix code formatting
+        - label: No JSON or ENUM columns added to migrations
 
   - type: textarea
     id: related-issues

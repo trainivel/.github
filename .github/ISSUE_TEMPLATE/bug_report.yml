@@ -11,8 +11,8 @@ body:
   - type: input
     id: module
     attributes:
-      label: Affected Handler
-      placeholder: e.g. invoices, quotes, payments
+      label: Affected Handler or Connector
+      placeholder: e.g. TrainMore sync, Moneybird push, membership mapping
     validations:
       required: true
 
